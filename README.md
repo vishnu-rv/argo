@@ -111,6 +111,11 @@ Once ArgoCD is set up and your application is created, any changes made to the G
 
    ![image](https://github.com/user-attachments/assets/aceb2f64-2e66-4361-804c-94a55a4a90cc)
 
+   Output:
+
+   ![Screencastfrom2025-01-2419-15-40-ezgif com-speed](https://github.com/user-attachments/assets/2ebd51d8-c19f-48ad-8b47-f3f7d9890b31)
+
+
 
 ---
 
