@@ -1,5 +1,3 @@
-Here's an updated README file with more details, including how Git and ArgoCD communicate, as well as instructions for setting up ArgoCD, accessing it through the LoadBalancer service, and integrating Jenkins for continuous deployment. I've added placeholders for the screenshots you can attach later.
-
 ---
 
 # **ArgoCD with GitOps: Deploying Applications 🚀**
@@ -133,6 +131,9 @@ For example, to update the Docker image version:
    ```
 
 3. ArgoCD will detect the change and deploy the updated configuration to Kubernetes.
+
+![image](https://github.com/user-attachments/assets/894176ce-a878-4053-9780-1d1d5f3105c5)
+
 
 ---
 
