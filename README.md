@@ -3,6 +3,23 @@
 
 # ArgoCD with GitOps: Deploying Applications 🚀
 
+## What is GitOps? 🌐
+
+GitOps is a modern approach to continuous delivery that uses Git as the source of truth for both the desired state of the application and its infrastructure. In GitOps, all changes to the system (whether application code, configurations, or infrastructure) are made via pull requests to a Git repository. These changes are automatically applied to the system, ensuring that the live environment is always in sync with the repository.
+
+### Key Benefits of GitOps:
+
+Single Source of Truth: Everything, including infrastructure and applications, is defined in Git.
+Automated and Continuous Deployment: Changes pushed to Git are automatically applied to the system without manual intervention.
+Auditability: Git provides an audit trail for every change made to the system.
+Security: Access control is managed through Git's permission system, ensuring a secure way to manage changes.
+
+## GitOps Workflow:
+
+Developers make changes to code or anything in a Git repository.
+A tool like ArgoCD or Flux monitors the repository.
+Whenever a change is detected in the Git repository, it is automatically deployed to the Kubernetes cluster, ensuring the system is up to date.
+
 ## What is ArgoCD? 🔧
 
 **ArgoCD** is a declarative, GitOps continuous delivery tool for Kubernetes. It allows you to manage and deploy Kubernetes applications using Git repositories as the source of truth. This enables continuous delivery and automated synchronization of Kubernetes resources.
