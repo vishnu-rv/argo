@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: game-deployment
+  namespace: game
+  labels:
+    app: vishnuops-game
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: vishnuops-game
+  template:
+    metadata:
+      labels:
+        app: vishnuops-game
+    spec:
+      containers:
+        - name: vishnuops-game
+          image: vishnuops-game:v1
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+
