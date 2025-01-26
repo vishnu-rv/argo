@@ -63,4 +63,21 @@ pipeline {
         stage('Commit and Push Updated Manifest to Git') {
             steps {
                 script {
-                    // Add, commi
+                    // Add, commit, and push the updated Kubernetes manifest
+                    sh '''
+                    git config --global user.email "your-email@example.com"
+                    git config --global user.name "Your Name"
+                    git add k8s/manifest.yaml
+                    git commit -m "Updated Kubernetes manifest with new Docker image"
+                    git push origin ${GIT_BRANCH}
+                    '''
+                }
+            }
+        }
+        
+        // Deploy with ArgoCD
+        stage('Deploy with ArgoCD') {
+            steps {
+                script {
+                    // Example: Use ArgoCD CLI to sync the app
+                    echo "Deploying to Kube
