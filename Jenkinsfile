@@ -2,11 +2,11 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_CREDENTIALS_ID = '7e7a9991-7b74-4877-bdb2-541ef7e31273'  // Docker credentials ID
-        GIT_CREDENTIALS_ID = 'cbc59cf9-574a-4d91-985e-a5bfab43c77a'      // Git credentials ID
-        DOCKER_REPO = 'vishnu2117/vishnuops-game:v1'  // Full image path for Docker
-        GIT_REPO = 'https://github.com/vishnu-rv/argo.git'  // Git repository URL
-        GIT_BRANCH = 'main'  // Branch name (adjust if needed)
+        DOCKER_CREDENTIALS_ID = // Docker credentials ID
+        GIT_CREDENTIALS_ID =      // Git credentials ID
+        DOCKER_REPO =   // Full image path for Docker
+        GIT_REPO =   // Git repository URL
+        GIT_BRANCH =   // Branch name (adjust if needed)
     }
     
     stages {
